@@ -1,0 +1,16 @@
+  {
+    "name": "Old Reddit",
+    "version": "1.0",
+    "description": "Go back to old Reddit",
+    "manifest_version": 2,
+    "permissions": [
+        "*://www.reddit.com/*"
+    ],
+    "content_scripts": [{
+        "matches": [
+            "*://www.reddit.com/*"
+        ],
+        "run_at": "document_start",
+        "js": ["change_reddit.js"]
+    }]
+  }
